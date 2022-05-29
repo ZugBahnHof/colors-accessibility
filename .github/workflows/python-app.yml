@@ -36,7 +36,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest test_accessibility_processor.py
-        pytest test_color.py
-        pytest test_utils.py
-        pytest test_validator.py
+        pytest tests/test*

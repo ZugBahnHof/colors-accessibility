@@ -85,11 +85,11 @@ This class can process different type of input values. To initialize a color, fo
 <a name="input-values"></a>
 
 For `rgb` color space:
-<center>
+<div align="center">
   <img src="colors_accessibility/static/rgb_representations.svg" alt="rgb color inputs" width=75%/>
-</center>
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -287,9 +287,9 @@ print(values_dictionary_representations)
 ### Contrast ratio
 <a name="contrast-ratio"></a>
 We can calculate contrast ratio of a color.
-<center>
+<div align="center">
   <img src="colors_accessibility/static/accessibility_processor_contrast.svg" alt="contrast ratio" width=75%/>
-</center>
+</div>
 
 <details>
 <summary align="center">Code</summary>
