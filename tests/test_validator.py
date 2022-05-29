@@ -1,10 +1,10 @@
 import unittest
 
-from colors_accessibility.utils import ExceededMaximumValueError, IncorrectArgumentsTypingError, IncorrectColorSpaceError, \
-    IncorrectHexValueError, IncorrectHslValueError, IncorrectInputLengthError, NegativeNumberError, \
-    IncorrectHexLengthError
+from colors_accessibility.utils.errors import ExceededMaximumValueError, IncorrectArgumentsTypingError, \
+    IncorrectColorSpaceError, IncorrectHexValueError, IncorrectHslValueError, IncorrectInputLengthError, \
+    NegativeNumberError, IncorrectHexLengthError
 from colors_accessibility.validator import Validator
-from colors_accessibility.data import TEST_DATA
+from colors_accessibility.data.test_data import TEST_DATA
 
 
 class TestValidator(unittest.TestCase):

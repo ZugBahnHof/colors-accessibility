@@ -1,7 +1,7 @@
 import unittest
 
 from colors_accessibility.color import Color
-from colors_accessibility.data import TEST_DATA
+from colors_accessibility.data.test_data import TEST_DATA
 
 
 class TestColor(unittest.TestCase):

@@ -4,7 +4,7 @@ from colors_accessibility.utils import check_if_values_are_positive, NegativeNum
     check_if_values_are_numeric, check_if_correct_hsl_values, normalize_value, normalize_values, convert_integer_to_hex, \
     expand_values, associate_input_args_with_expected_types, update_non_empty_values
 from colors_accessibility.utils import IncorrectHexValueError, IncorrectHslValueError, IncorrectValueTypeError
-from colors_accessibility.data import TEST_DATA
+from colors_accessibility.data.test_data import TEST_DATA
 
 
 class TestColor(unittest.TestCase):
