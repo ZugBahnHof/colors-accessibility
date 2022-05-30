@@ -52,7 +52,7 @@ class Color:
             self.color_values = ''.join(self.color_values)
         color_value = self.color_values.replace('#', '')
         if len(color_value) == 3:
-            self.color_values = f"#{''.join([character * 2 for character in self.color_values[1:]])}"
+            self.color_values = f"#{''.join([character * 2 for character in self.color_values])}"
 
     @processing_registry.register('rgb')
     def process_rgb(self):
