@@ -85,6 +85,7 @@ This class can process different type of input values. To initialize a color, fo
 <a name="input-values"></a>
 
 For `rgb` color space:
+
 <div align="center">
   <img src="colors_accessibility/static/rgb_representations.svg" alt="rgb color inputs" width=75%/>
 </div>
@@ -108,11 +109,12 @@ colors = [
 </details>  
 
 For `hex` color space:
-<center>
+
+<div align="center">
   <img src="colors_accessibility/static/hex_representations.svg" alt="hex color inputs" width=75%/>
-</center>
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -131,11 +133,12 @@ colors = [
 </details>
 
 For `hsl` color space:
-<center>
+
+<div align="center">
   <img src="colors_accessibility/static/hsl_representations.svg" alt="hsl color inputs" width=75%/>
-</center>
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -159,12 +162,11 @@ colors = [
 `Color` class provides functionality of converting between `rgb`, `hsl` and `hex` color spaces.
 We can both calculate color values in different color space an
 
-<center>
+<div align="center">
   <img src="colors_accessibility/static/color_conversions.svg" alt="color conversions" width=75%/>
-</center>
-
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -190,11 +192,12 @@ print(color)
 ### Relative luminance
 <a name="relative-luminance"></a>
 We also have an ability to calculate [relative luminance](https://en.wikipedia.org/wiki/Relative_luminance) of a color.
-<center>
+
+<div align="center">
   <img src="colors_accessibility/static/relative_luminance.svg" alt="relative luminance" width=75%/>
-</center>
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -212,11 +215,11 @@ print(relative_luminance)
 We can get color representations for the specified color. We can choose from: `rgb`, `hsl`, `hex` and `all`. With `all`
 we get representation for all three color spaces.
 
-<center>
+<div align="center">
   <img src="colors_accessibility/static/get_single_space_representation.svg" alt="get single space representation" width=75%/>
-</center>
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -234,13 +237,11 @@ print(representation
 <a name="color-representations"></a>
 Here we get the representations for all three spaces.
 
-<center>
+<div align="center">
   <img src="colors_accessibility/static/get_color_representations.svg" alt="get color representations" width=75%/>
-</center>
-
-
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -261,13 +262,11 @@ print(representation.hsl)
 <a name="values-to-dictionary"></a>
 We can format the color representation to a dictionary.
 
-<center>
+<div align="center">
   <img src="colors_accessibility/static/to_dictionary.svg" alt="values to dictionary" width=75%/>
-</center>
-
-
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -287,12 +286,12 @@ print(values_dictionary_representations)
 ### Contrast ratio
 <a name="contrast-ratio"></a>
 We can calculate contrast ratio of a color.
+
 <div align="center">
   <img src="colors_accessibility/static/accessibility_processor_contrast.svg" alt="contrast ratio" width=75%/>
 </div>
-
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import Color
@@ -320,12 +319,12 @@ print(contrast)
 <a name="wcag-compliant-colors-representation"></a>
 We can get the WCAG compliant colors representation - we get them by tweaking HSL color values till contrast between the
 two input colors are on adequate levels.
-<center>
-  <img src="colors_accessibility/static/wcag_compliant_representation.svg" alt="wcag compliant representation" width=75%/>
-</center>
 
+<div align="center">
+  <img src="colors_accessibility/static/wcag_compliant_representation.svg" alt="wcag compliant representation" width=75%/>
+</div>
 <details>
-<summary align="center">Code</summary>
+<summary>Code</summary>
 
 ```
 from colors_accessibility import AccessibilityProcessor, Color
