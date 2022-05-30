@@ -108,9 +108,9 @@ colors = [
 </details>  
 
 For `hex` color space:
-<div align="center">
+<center>
   <img src="colors_accessibility/static/hex_representations.svg" alt="hex color inputs" width=75%/>
-</div>
+</center>
 <details>
 <summary align="center">Code</summary>
 
@@ -131,9 +131,9 @@ colors = [
 </details>
 
 For `hsl` color space:
-<div align="center">
+<center>
   <img src="colors_accessibility/static/hsl_representations.svg" alt="hsl color inputs" width=75%/>
-</div>
+</center>
 <details>
 <summary align="center">Code</summary>
 
@@ -158,9 +158,11 @@ colors = [
 
 `Color` class provides functionality of converting between `rgb`, `hsl` and `hex` color spaces.
 We can both calculate color values in different color space an
-<div align="center">
+
+<center>
   <img src="colors_accessibility/static/color_conversions.svg" alt="color conversions" width=75%/>
-</div>
+</center>
+
 <details>
 <summary align="center">Code</summary>
 
@@ -188,9 +190,9 @@ print(color)
 ### Relative luminance
 <a name="relative-luminance"></a>
 We also have an ability to calculate [relative luminance](https://en.wikipedia.org/wiki/Relative_luminance) of a color.
-<div align="center">
+<center>
   <img src="colors_accessibility/static/relative_luminance.svg" alt="relative luminance" width=75%/>
-</div>
+</center>
 <details>
 <summary align="center">Code</summary>
 
@@ -209,9 +211,10 @@ print(relative_luminance)
 <a name="single-space-representation"></a>
 We can get color representations for the specified color. We can choose from: `rgb`, `hsl`, `hex` and `all`. With `all`
 we get representation for all three color spaces.
-<div align="center">
+
+<center>
   <img src="colors_accessibility/static/get_single_space_representation.svg" alt="get single space representation" width=75%/>
-</div>
+</center>
 <details>
 <summary align="center">Code</summary>
 
@@ -223,16 +226,19 @@ color = Color('rgb', [120, 53, 89])
 print(color)
 
 representation = color.get_representations('hex')
-print(representation)
+print(representation
 ```
 </details>
 
 ### Color representations
 <a name="color-representations"></a>
 Here we get the representations for all three spaces.
-<div align="center">
+
+<center>
   <img src="colors_accessibility/static/get_color_representations.svg" alt="get color representations" width=75%/>
-</div>
+</center>
+
+
 <details>
 <summary align="center">Code</summary>
 
@@ -254,9 +260,12 @@ print(representation.hsl)
 ### Values to dictionary
 <a name="values-to-dictionary"></a>
 We can format the color representation to a dictionary.
-<div align="center">
+
+<center>
   <img src="colors_accessibility/static/to_dictionary.svg" alt="values to dictionary" width=75%/>
-</div>
+</center>
+
+
 <details>
 <summary align="center">Code</summary>
 
@@ -281,6 +290,7 @@ We can calculate contrast ratio of a color.
 <div align="center">
   <img src="colors_accessibility/static/accessibility_processor_contrast.svg" alt="contrast ratio" width=75%/>
 </div>
+
 <details>
 <summary align="center">Code</summary>
 
@@ -310,9 +320,10 @@ print(contrast)
 <a name="wcag-compliant-colors-representation"></a>
 We can get the WCAG compliant colors representation - we get them by tweaking HSL color values till contrast between the
 two input colors are on adequate levels.
-<div align="center">
+<center>
   <img src="colors_accessibility/static/wcag_compliant_representation.svg" alt="wcag compliant representation" width=75%/>
-</div>
+</center>
+
 <details>
 <summary align="center">Code</summary>
 
