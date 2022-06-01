@@ -93,8 +93,9 @@ class Color:
     def rgb_to_hex(self):
         color_values = expand_values(self.color_values)
         hex_representation = '#'
-        for value in color_values:
-            value = convert_integer_to_hex(int(value))
+        for index, value in enumerate(color_values):
+            is_first = True if index == 0 else False
+            value = convert_integer_to_hex(int(value), is_first)
             hex_representation += value
         return hex_representation
 
@@ -200,7 +201,6 @@ class Color:
 
     def calculate_relative_luminance(self, new_estimated_threshold: bool = False) -> float:
         rgb_representation = self.color_values if self.color_space == 'rgb' else self.to_rgb()
-        rgb_representation = normalize_values(rgb_representation, 255)
         threshold = 0.03928 if not new_estimated_threshold else 0.04045
         calculated_color_weights = [
             color_value / 12.92
