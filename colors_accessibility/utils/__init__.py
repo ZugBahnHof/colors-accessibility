@@ -99,14 +99,8 @@ def normalize_values(
 
 def convert_integer_to_hex(
         number: int,
-        is_first: bool = False
 ) -> str:
-    hex_number = hex(number)[2:]
-    if len(hex_number) == 1:
-        if is_first:
-            hex_number = '0' + hex_number
-        else:
-            hex_number = f'{hex_number}{hex_number}'
+    hex_number = '%02x' % number
     return hex_number
 
 

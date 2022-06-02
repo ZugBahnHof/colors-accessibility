@@ -94,8 +94,7 @@ class Color:
         color_values = expand_values(self.color_values)
         hex_representation = '#'
         for index, value in enumerate(color_values):
-            is_first = True if index == 0 else False
-            value = convert_integer_to_hex(int(value), is_first)
+            value = convert_integer_to_hex(int(value))
             hex_representation += value
         return hex_representation
 
