@@ -15,7 +15,7 @@ class Color:
     color_values: Union[str, dict, list, tuple]
     implemented_color_spaces: list = field(default_factory=lambda: CONFIGURATION_DATA.get('implemented'))
 
-    validator: Validator = Validator()
+    validator: Validator = field(default_factory=lambda: Validator())
 
     conversion_registry: Registry = Registry()
     processing_registry: Registry = Registry()
